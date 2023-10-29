@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんアプリ</title>
+</head>
+<body>
+
+    <!-- ここから下はcontainer -->
+    <div class="container">
+        <p >じゃんけん</p>
+        <button class="btn" id="0" onclick="janken(0)">ぐー</button> 
+        <!-- ↑classでボタンを定義して、idがボタンの識別子となっている。onclickでjankenという名前の関数をjsで呼び出す。-->
+        <button class="btn" id="1" onclick="janken(1)">ちょき</button>
+        <button class="btn" id="2" onclick="janken(2)">ぱー</button>
+        <p id="result"></p> 
+        <!-- ↑はjsの処理で使う段落を作っている。idでresultという名前で定義されており、これをjsの処理で使う -->
+        <p id="final_result"></p>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.container{
+    background-color: pink;
+    padding: 30px;
+
+    & .btn{
+        display: inline-block; 
+        /* インライン特性とは文章と同じように同じ行で扱うもの。block特性とがブロックとして高さを指定できるようにしたもの */
+        padding: 10px;
+        /* ボタンの中身までの幅を指定 */
+        /* border: 4px solid;
+        枠線の太さを指定 だがこれを入れると反応しない*/
+        border-radius: 10px;
+        /* ボックスの角の滑らかさを指定 */
+        transition: all 1s;
+        /* スタイルが変更するまでの長さを指定。allで全要素を対象としている */
+        margin: 0 auto;
+        cursor: pointer;
+        /* マウスがホバーしたときに、矢印から人の指に変わる */
+
+        &:hover {
+            background-color: black;
+            color: white;
+            /* ホバーしたときの変化を指定 */
+        }
+    }
+}
